@@ -1,0 +1,26 @@
+{
+  "name": "websockets-playlist",
+  "version": "1.0.0",
+  "description": "A chat app using WebSockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshaunjp/websockets-playlist.git"
+  },
+  "author": "The Net Ninja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamshaunjp/websockets-playlist/issues"
+  },
+  "homepage": "https://github.com/iamshaunjp/websockets-playlist#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
