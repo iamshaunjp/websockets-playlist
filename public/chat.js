@@ -19,7 +19,7 @@ btn.addEventListener('click', function(){
 
 message.addEventListener('keypress', function(){
     socket.emit('typing', handle.value);
-})
+});
 
 // Listen for events
 socket.on('chat', function(data){
