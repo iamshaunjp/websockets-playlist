@@ -24,7 +24,11 @@ message.addEventListener('keypress', function(){
 // Listen for events
 socket.on('chat', function(data){
     feedback.innerHTML = '';
-    output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+    if (data.message.length > 0) {
+        output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+        var chatWindow = document.getElementById('chat-window');
+        chatWindow.scrollTo(0, output.scrollHeight);
+    }
 });
 
 socket.on('typing', function(data){
